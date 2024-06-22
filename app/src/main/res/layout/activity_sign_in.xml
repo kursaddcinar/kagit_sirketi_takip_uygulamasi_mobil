@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".SignIn">
+
+    <TextView
+        android:id="@+id/txt1_name_sign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="94dp"
+        android:layout_marginTop="136dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="28dp"
+        android:text="Name:"
+        android:textColor="#0019FF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/txt1_surname_sign"
+        app:layout_constraintEnd_toStartOf="@+id/txt_name_sign"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt1_surname_sign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="73dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="29dp"
+        android:text="Surname:"
+        android:textColor="#0019FF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/txt1_phone_number_sign"
+        app:layout_constraintEnd_toStartOf="@+id/txt_surname_sign"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt1_name_sign" />
+
+    <TextView
+        android:id="@+id/txt1_phone_number_sign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="27dp"
+        android:text="Phone number:"
+        android:textColor="#0019FF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/txt1_email_sign"
+        app:layout_constraintEnd_toStartOf="@+id/txt_phone_sign"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt1_surname_sign" />
+
+
+    <TextView
+        android:id="@+id/txt1_email_sign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="93dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="27dp"
+        android:text="E-mail:"
+        android:textColor="#0019FF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/txt1_password_sign"
+        app:layout_constraintEnd_toStartOf="@+id/txt_email_sign"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt1_phone_number_sign" />
+
+    <EditText
+        android:id="@+id/txt_surname_sign"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginBottom="11dp"
+        android:background="@drawable/edittext_border"
+        android:ems="10"
+        android:hint="Enter surname"
+        android:inputType="text"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/txt_phone_sign"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txt1_surname_sign"
+        app:layout_constraintTop_toBottomOf="@+id/txt_name_sign" />
+
+    <EditText
+        android:id="@+id/txt_password_sign"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginBottom="11dp"
+        android:background="@drawable/edittext_border"
+        android:ems="10"
+        android:hint="Enter password"
+        android:inputType="textPassword"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/chxbox_data"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txt1_password_sign"
+        app:layout_constraintTop_toBottomOf="@+id/txt_email_sign" />
+
+    <TextView
+        android:id="@+id/txt1_password_sign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="22dp"
+        android:text="Password:"
+        android:textColor="#0019FF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/chxbox_data"
+        app:layout_constraintEnd_toStartOf="@+id/txt_password_sign"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt1_email_sign" />
+
+    <EditText
+        android:id="@+id/txt_email_sign"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edittext_border"
+        android:ems="10"
+        android:hint="Enter email"
+        android:inputType="textEmailAddress"
+
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/txt_password_sign"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txt1_email_sign"
+        app:layout_constraintTop_toBottomOf="@+id/txt_phone_sign" />
+
+    <EditText
+        android:id="@+id/txt_name_sign"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="126dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edittext_border"
+        android:ems="10"
+        android:hint="Enter name"
+        android:inputType="text"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/txt_surname_sign"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txt1_name_sign"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txt_phone_sign"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginBottom="11dp"
+        android:background="@drawable/edittext_border"
+        android:ems="10"
+        android:hint="Enter phone number"
+        android:inputType="text"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/txt_email_sign"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txt1_phone_number_sign"
+        app:layout_constraintTop_toBottomOf="@+id/txt_surname_sign" />
+
+    <CheckBox
+        android:id="@+id/chxbox_data"
+        android:layout_width="323dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="46dp"
+        android:buttonTint="#FFFFFF"
+        android:foregroundTint="#0F53FF"
+        android:text="Consent to the use of my personal data."
+        android:textColor="#F62A2A"
+        app:buttonIconTint="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/btn_complate_sign"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_password_sign" />
+
+    <Button
+        android:id="@+id/btn_complate_sign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="43dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/blue_button"
+        android:onClick="complateSign"
+        android:text="COMPLETE SIGN UP"
+        app:layout_constraintBottom_toTopOf="@+id/btn_sign_to_log"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chxbox_data" />
+
+    <Button
+        android:id="@+id/btn_sign_to_log"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="91dp"
+        android:layout_marginEnd="91dp"
+        android:layout_marginBottom="152dp"
+        android:background="@drawable/red_button"
+        android:text="BACK"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txt1_email_sign"
+        app:layout_constraintTop_toBottomOf="@+id/btn_complate_sign" />
+</androidx.constraintlayout.widget.ConstraintLayout>

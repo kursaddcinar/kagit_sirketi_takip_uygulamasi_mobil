@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/general"> <!-- Arka plan resmi -->
+
+    <Button
+        android:id="@+id/btn_add_costumer_addcustomer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="9dp"
+        android:text="ADD CUSTOMER"
+        android:background="@drawable/blue_button"
+    app:layout_constraintBottom_toTopOf="@+id/btn_list_costumer_addcustomer"
+    app:layout_constraintStart_toStartOf="@+id/btn_list_costumer_addcustomer" />
+
+    <Button
+        android:id="@+id/btn_back_addcustomer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="205dp"
+        android:text="BACK TO CUSTOMERS"
+        android:background="@drawable/red_button"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btn_list_costumer_addcustomer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="11dp"
+        android:text="LIST CUSTOMERS"
+        android:background="@drawable/blue_button"
+    app:layout_constraintBottom_toTopOf="@+id/btn_back_addcustomer"
+    app:layout_constraintEnd_toEndOf="@+id/btn_back_addcustomer" />
+
+    <TextView
+        android:id="@+id/txtNameSurnameCustomer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Name Surname:"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txt_name_surname_customer"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtphoneNumberCustomer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:text="Phone number:"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txt_phone_number_customer"
+        app:layout_constraintEnd_toEndOf="@+id/txtNameSurnameCustomer" />
+
+    <EditText
+        android:id="@+id/txt_name_surname_customer"
+        android:layout_width="210dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="149dp"
+        android:layout_marginEnd="47dp"
+        android:background="@drawable/edittext_border"
+        android:ems="10"
+        android:hint="Enter Name Surname"
+        android:inputType="text"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txt_phone_number_customer"
+        android:layout_width="210dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/edittext_border"
+        android:ems="10"
+        android:hint="Enter Phone Number"
+        android:inputType="text"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="@+id/txt_name_surname_customer"
+        app:layout_constraintTop_toBottomOf="@+id/txt_name_surname_customer" />
+</androidx.constraintlayout.widget.ConstraintLayout>

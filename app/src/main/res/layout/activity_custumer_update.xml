@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/listpicture">
+
+    <ListView
+        android:id="@+id/listView_customer_customerupdate"
+        android:layout_width="0dp"
+        android:layout_height="319dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_back_customerupdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="26dp"
+        android:text="BACK TO CUSTOMERS"
+        android:background="@drawable/red_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btn_update_customerupdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="10dp"
+        android:text="UPDATE THE CUSTOMER"
+        android:background="@drawable/red_button"
+        app:layout_constraintBottom_toTopOf="@+id/btn_back_customerupdate"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/txt_customer_name_surname_customerupdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="240dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Enter Name Surname"
+        android:background="@drawable/edittext_border"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/txt_customer_id_customerupdate"
+        android:layout_width="0dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textSize="10sp"
+        android:hint="Enter Customer ID"
+        android:background="@drawable/edittext_border"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView12" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="17dp"
+        android:text="NAME SURNAME"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txt_customer_name_surname_customerupdate"
+        app:layout_constraintEnd_toStartOf="@+id/txt_customer_name_surname_customerupdate" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="28dp"
+        android:text="CUSTOMER ID"
+        app:layout_constraintBottom_toTopOf="@+id/txt_customer_name_surname_customerupdate"
+        app:layout_constraintEnd_toStartOf="@+id/txt_customer_name_surname_customerupdate" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="19dp"
+        android:text="PHONE NUMBER"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txt_customer_phone_customerupdate"
+        app:layout_constraintEnd_toStartOf="@+id/txt_customer_phone_customerupdate" />
+
+    <EditText
+        android:id="@+id/txt_customer_phone_customerupdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="17dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Enter Phone Number"
+        android:background="@drawable/edittext_border"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_customer_name_surname_customerupdate" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

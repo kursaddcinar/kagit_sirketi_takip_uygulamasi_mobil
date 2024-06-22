@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Orders">
+
+    <Button
+        android:id="@+id/btn_list_orders"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="154dp"
+        android:layout_marginBottom="11dp"
+        android:text="LIST TO ORDERS"
+        android:background="@drawable/blue_button"
+        app:layout_constraintBottom_toTopOf="@+id/btn_update_order"
+        app:layout_constraintEnd_toEndOf="@+id/btn_update_order"
+        app:layout_constraintStart_toStartOf="@+id/btn_update_order"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_update_order"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="11dp"
+        android:text="UPDATE ORDER"
+        android:background="@drawable/blue_button"
+        app:layout_constraintBottom_toTopOf="@+id/btn_add_order"
+        app:layout_constraintEnd_toEndOf="@+id/btn_add_order"
+        app:layout_constraintStart_toStartOf="@+id/btn_add_order"
+        app:layout_constraintTop_toBottomOf="@+id/btn_list_orders" />
+
+    <Button
+        android:id="@+id/btn_add_order"
+        android:layout_width="150dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="22dp"
+        android:text="ADD ORDER"
+        android:background="@drawable/blue_button"
+        app:layout_constraintBottom_toTopOf="@+id/btn_cancel_order"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_update_order" />
+
+    <Button
+        android:id="@+id/btn_back_orders_to_menu"
+        android:layout_width="150dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="178dp"
+        android:background="@drawable/red_button"
+        android:text="BACK TO MAIN MENU"
+        android:textColor="#F8F8F8"
+        android:textColorLink="#FF0000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_cancel_order" />
+
+    <Button
+        android:id="@+id/btn_cancel_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="27dp"
+        android:text="CANCEL ORDER"
+        android:background="@drawable/red_button"
+        app:layout_constraintBottom_toTopOf="@+id/btn_back_orders_to_menu"
+        app:layout_constraintStart_toStartOf="@+id/btn_add_order"
+        app:layout_constraintTop_toBottomOf="@+id/btn_add_order" />
+</androidx.constraintlayout.widget.ConstraintLayout>

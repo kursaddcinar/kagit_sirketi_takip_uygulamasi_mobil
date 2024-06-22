@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txt_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="17dp"
+        android:text="Password:"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txt_log_password"
+        app:layout_constraintEnd_toStartOf="@+id/txt_log_password"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/txt_log_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="48dp"
+        android:autofillHints=""
+        android:background="@drawable/edittext_border"
+        android:ems="10"
+        android:hint="Enter Email"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:textColor="#000000"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txt_email"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="HardcodedText,LabelFor" />
+
+    <TextView
+        android:id="@+id/txt_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="24dp"
+        android:text="E-Mail:"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_log_password"
+        app:layout_constraintEnd_toStartOf="@+id/txt_log_email"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/txt_log_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:autofillHints=""
+        android:background="@drawable/edittext_border"
+        android:ems="10"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:textColor="#8A000000"
+        android:textColorHint="#6D000000"
+        app:layout_constraintBottom_toTopOf="@+id/btn_login"
+        app:layout_constraintStart_toStartOf="@+id/txt_log_email"
+        tools:ignore="HardcodedText,LabelFor,TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/btn_logToSign"
+        android:layout_width="110dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="SIGN IN"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_login"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="LOG IN"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btn_logToSign"
+        app:layout_constraintStart_toStartOf="@+id/btn_logToSign"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

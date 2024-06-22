@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "736310338464",
+    "project_id": "kagitsirketitakipuygulamasi",
+    "storage_bucket": "kagitsirketitakipuygulamasi.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:736310338464:android:3bfe1838706ee779d07ac5",
+        "android_client_info": {
+          "package_name": "com.example.odevdeneme1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNlNthUmx3RhGRSOJE2xsb67ZXv9F91Mw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

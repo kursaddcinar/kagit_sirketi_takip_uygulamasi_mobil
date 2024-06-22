@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/general"
+    tools:context=".settingEmail">
+
+    <EditText
+        android:id="@+id/txt_current_email_settingemail"
+        android:layout_width="210dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="180dp"
+        android:background="@drawable/edittext_border"
+        android:ems="10"
+        android:hint="Enter current email"
+        android:inputType="text"
+        app:layout_constraintStart_toEndOf="@+id/textView19"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txt_password_settingemail"
+        android:layout_width="210dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/edittext_border"
+        android:ems="10"
+        android:hint="Enter your password"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="@+id/txt_current_email_settingemail"
+        app:layout_constraintTop_toBottomOf="@+id/txt_current_email_settingemail" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="CURRENT E-MAIL"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txt_current_email_settingemail"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="PASSWORD"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txt_password_settingemail"
+        app:layout_constraintEnd_toStartOf="@+id/txt_password_settingemail" />
+
+    <EditText
+        android:id="@+id/txt_new_email_settingemail"
+        android:layout_width="210dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="284dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Enter new email"
+        android:background="@drawable/edittext_border"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/txt_new_email_again" />
+
+    <Button
+        android:id="@+id/btn_change_email_settingemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="10dp"
+        android:text="CHANGE EMAIL"
+        android:background="@drawable/blue_button"
+        app:layout_constraintEnd_toEndOf="@+id/txt_new_email_again"
+        app:layout_constraintTop_toBottomOf="@+id/txt_new_email_again" />
+
+    <EditText
+        android:id="@+id/txt_new_email_again"
+        android:layout_width="210dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="23dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Enter new email again"
+        android:background="@drawable/edittext_border"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView21"
+        app:layout_constraintTop_toBottomOf="@+id/txt_new_email_settingemail" />
+
+    <Button
+        android:id="@+id/btn_back_settingemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="41dp"
+        android:text="BACK TO SETTINGS"
+        android:background="@drawable/red_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_change_email_settingemail" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="18dp"
+        android:text="NEW E-MAIL"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txt_new_email_settingemail"
+        app:layout_constraintEnd_toStartOf="@+id/txt_new_email_settingemail" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NEW E-MAIL AGAIN"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txt_new_email_again"
+        app:layout_constraintEnd_toStartOf="@+id/txt_new_email_again"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

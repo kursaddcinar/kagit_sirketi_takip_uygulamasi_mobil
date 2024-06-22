@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/listpicture">
+
+    <ListView
+        android:id="@+id/listView_customer_customerdelete"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="14dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/textView15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:text="CUSTOMER ID"
+        app:layout_constraintBottom_toTopOf="@+id/txt_customer_id_customerdelete"
+        app:layout_constraintEnd_toEndOf="@+id/txt_customer_id_customerdelete"
+        app:layout_constraintHorizontal_bias="0.425"
+        app:layout_constraintStart_toStartOf="@+id/txt_customer_id_customerdelete"
+        app:layout_constraintTop_toBottomOf="@+id/listView_customer_customerdelete" />
+
+    <EditText
+        android:id="@+id/txt_customer_id_customerdelete"
+        android:layout_width="210dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="34dp"
+        android:ems="10"
+        android:hint="Enter Customer ID"
+        android:inputType="text"
+        android:background="@drawable/edittext_border"
+        app:layout_constraintBottom_toTopOf="@+id/btn_delete_deletecustomer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <Button
+        android:id="@+id/btn_delete_deletecustomer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/red_button"
+        android:text="DELETE THE CUSTOMER"
+        app:layout_constraintBottom_toTopOf="@+id/btn_back_customerdelete"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_customer_id_customerdelete" />
+
+    <Button
+        android:id="@+id/btn_back_customerdelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="92dp"
+        android:background="@drawable/red_button"
+        android:text="BACK TO CUSTOMER"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_delete_deletecustomer" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
